@@ -1,0 +1,63 @@
+<template>
+  <div>
+    <!-- mobile menu bar -->
+    <div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+      <!-- logo -->
+      <nuxt-link to="#" class="block p-4 text-white font-bold">
+        Nuxt Blog
+      </nuxt-link>
+      <!-- mobile menu button -->
+      <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700" @click="openSidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- sidebar -->
+    <div class="sidebar bg-blue-800 text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 md:h-full transition duration-200 ease-in-out md:z-0 z-10">
+      <!-- logo -->
+      <nuxt-link to="/" class="text-white flex items-center space-x-2 px-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        </svg>
+        <span class="text-2xl font-extrabold">Nuxt Blog</span>
+      </nuxt-link>
+      <!-- nav -->
+      <nav>
+        <nuxt-link to="/" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 flex items-center space-x-2 px-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+          <span>Home</span>
+        </nuxt-link>
+        <nuxt-link to="/blog" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">
+          Posts
+        </nuxt-link>
+        <nuxt-link to="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">
+          About
+        </nuxt-link>
+        <nuxt-link to="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700">
+          Pricing
+        </nuxt-link>
+      </nav>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    openSidebar () {
+      const sidebar = document.querySelector('.sidebar')
+
+      sidebar.classList.toggle('-translate-x-full')
+    }
+  }
+
+}
+</script>
+
+<style scoped>
+
+</style>
