@@ -9,7 +9,11 @@ This is my blog, made with the frontend javascript framework Nuxt, a meta-framew
 
 ## Blog details
 
-This is my nuxt blog. Made basically with Nuxt modules, like:
+This is my nuxt blog. Made basically with Nuxt modules.
+
+### Technologies
+
+The technologies used in this blog are:
 
 * Nuxt/Content: to parse Markdown to HTML dinamically
 * Nuxtjs/tailwind: to style the blog with the CSS framework tailwindcss

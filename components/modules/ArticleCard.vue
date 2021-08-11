@@ -16,7 +16,7 @@
     </nav>
     <br>
     <nuxt-content :document="article" />
-    <pre>{{ article }}</pre>
+    <!-- <pre>{{ article }}</pre> -->
   </article>
 </template>
 

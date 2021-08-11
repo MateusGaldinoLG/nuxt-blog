@@ -6,16 +6,8 @@
         Blog posts
       </h1>
       <ul>
-        <li v-for="article of articles" :key="article.slug" class="my-3">
-          <NuxtLink :to="`/blog/${article.slug}`">
-            <div>
-              <h2 class="text-3xl hover:underline">
-                {{ article.title }}
-              </h2>
-              <p>by {{ article.author.name }}</p>
-              <p>{{ article.description }}</p>
-            </div>
-          </NuxtLink>
+        <li v-for="article of articles" :key="article.slug" class="my-3 p-3 bg-blue-900 text-white rounded md:w-1/2">
+          <ArticleResume :article="article" />
         </li>
       </ul>
     </section>
