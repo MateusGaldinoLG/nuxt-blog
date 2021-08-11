@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/blog", (function(a){return {data:[{articles:[{slug:"HelloWorld",description:"nuxt content testing",title:"Hello World",author:{name:a}},{slug:"Appresentation",description:"blog details and explanations",title:"Blog presentation",author:{name:a}}]}],fetch:{},mutations:void 0}}("Mateus Galdino")));
