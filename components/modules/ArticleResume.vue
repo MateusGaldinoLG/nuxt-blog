@@ -8,7 +8,7 @@
       <p>{{ article.description }}</p>
       <p>Last Edited at: {{ formatDate(article.updatedAt) }}</p>
       <div class="flex justify-end">
-        <Button :text="'READ MORE'" :color-style="'bg-blue-300 text-gray-900'" />
+        <Button :text="'READ MORE'" :color-style="'bg-blue-300 text-gray-900 hidden md:block'" />
       </div>
     </div>
   </NuxtLink>
