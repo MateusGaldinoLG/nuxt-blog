@@ -1,9 +1,7 @@
 <template>
   <article>
     <header>
-      <h1 class="text-4xl font-bold">
-        {{ article.title }}
-      </h1>
+      <Title :title="article.title" />
       <p>{{ article.description }}</p>
       <p>Post last updated: {{ formatDate(article.updatedAt) }}</p>
     </header>

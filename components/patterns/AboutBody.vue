@@ -1,10 +1,8 @@
 <template>
   <main class="relative min-h-screen md:flex">
     <SideMenu />
-    <div class="flex-1 p-10">
-      <h1 class="md:text-left text-center text-3xl font-bold">
-        About this blog
-      </h1>
+    <section class="flex-1 p-10">
+      <Title :title="'About this blog'" />
       <h2 class="text-2xl font-semibold">
         Sobre mim
       </h2>
@@ -36,7 +34,7 @@
       </ul>
       <p>Todo meu estudo nessas áreas está, atualmente, em processo de desenvolvimento, com projetos pequenos criados na área.</p>
       <p>Alguns desses projetos são o <span class="font-bold">Aphorisme</span> social criada em fullstack com typescript e express no backend e Nuxt no frontend, e <span class="font-bold">esse blog</span>, feito utilizando nuxt content e tailwindcss</p>
-    </div>
+    </section>
   </main>
 </template>
 
